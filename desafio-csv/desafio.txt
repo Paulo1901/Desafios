@@ -1,0 +1,31 @@
+1 - ler o arquivo csv e encontrar qual dia, mes e ano o valor da ação da coca cola atingiu o maior valor
+usar a coluna high
+
+1.1 - salvar os 15 maiores valores encontrados na coluna high
+
+2 - fazer a media de todos os valores das colunas open, close, high, low
+
+3 - criar uma função que recebe um valor inteiro, ler o arquivo csv e remover todas as linhas que o 
+valor high for menor que o parametro passado na função
+
+4 - escrever o mesmo arquivo csv em um arquivo json com o seguinte formato:
+para cada linha do csv, use a data como chave e o valor é um objeto composto pelos valores restantes
+da linha 
+{
+    Date: {
+        "open" : valor,
+        "close": valor,
+        "high_low": (valor high + valor low ) / 2
+        "volume": valor
+    },
+    Date: {
+        "open" : valor,
+        "close": valor,
+        "high_low": (valor high + valor low ) / 2
+        "volume": valor
+    }
+}
+
+-- desafio --
+transforme a coluna Date em timestamp
+usar o matplotlib para plotar um gráfico na tela
